@@ -1,5 +1,6 @@
 import {Component, NgZone} from '@angular/core';
 import {NgIf} from '@angular/common';
+
 @Component({
   selector: 'app-root',
   imports: [
@@ -77,8 +78,7 @@ export class AppComponent {
         alert("Care Flow 'Mounjaro' sent to the patient!");
       } else if (type === 'Prolia') {
         alert("Care Flow 'Prolia reminder' scheduled for 15th of May!");
-      }
-      else if (type === 'morning') {
+      } else if (type === 'morning') {
         alert("Care Flow 'Morning after pill' send to the patient!");
       }
     }
