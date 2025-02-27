@@ -1,0 +1,63 @@
+
+.container {
+  text-align: center;
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 10px;
+  width: 50%;
+  margin: auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+button {
+  margin: 10px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.record-btn {
+  background: #28a745;
+  color: white;
+}
+.record-btn:disabled {
+  background: #6c757d;
+}
+.stop-btn {
+  background: #dc3545;
+  color: white;
+}
+.stop-btn:disabled {
+  background: #6c757d;
+}
+.transcript-box {
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  min-height: 50px;
+  width: 80%;
+  margin: 20px auto;
+  font-family: monospace;
+  border: 1px solid #ccc;
+}
+.prompt-box {
+  background: #fff3cd;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 20px auto;
+  width: 80%;
+  border: 1px solid #ffeeba;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.yes-btn {
+  background: #28a745;
+  color: white;
+}
+.no-btn {
+  background: #dc3545;
+  color: white;
+}

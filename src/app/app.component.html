@@ -1,1 +1,24 @@
+<div class="container">
+  <h1>🎤 Voice to Text</h1>
+  <button class="record-btn" (click)="startRecording()" [disabled]="recording">🎙 Start Recording</button>
+  <button class="stop-btn" (click)="stopRecording()" [disabled]="!recording">⏹ Stop Recording</button>
+  <p class="transcript-box">{{ transcript }}</p>
 
+  <div *ngIf="showMounjaroPrompt" class="prompt-box">
+    <p>Send the Care Flow 'Mounjaro' to the patient?</p>
+    <button class="yes-btn" (click)="sendCareFlow('Mounjaro', true)">✅ YES</button>
+    <button class="no-btn" (click)="sendCareFlow('Mounjaro', false)">❌ NO</button>
+  </div>
+
+  <div *ngIf="showProliaPrompt" class="prompt-box">
+    <p>Send the Care Flow 'Prolia reminder' to the patient on 15th of May?</p>
+    <button class="yes-btn" (click)="sendCareFlow('Prolia', true)">✅ YES</button>
+    <button class="no-btn" (click)="sendCareFlow('Prolia', false)">❌ NO</button>
+  </div>
+
+  <div *ngIf="showMorningPrompt" class="prompt-box">
+    <p>Send the Care Flow 'Morning After Pill' to the patient!</p>
+    <button class="yes-btn" (click)="sendCareFlow('morning', true)">✅ YES</button>
+    <button class="no-btn" (click)="sendCareFlow('morning', false)">❌ NO</button>
+  </div>
+</div>
